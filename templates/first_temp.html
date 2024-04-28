@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>This is my first Tempaltes</h1>
+    <h2>{{book}}</h2>
+    {%for book in books%} {%if book.is_published%}
+    <h2>{{book.title}}</h2>
+    {%endif%} {% endfor %}
   </body>
 </html>
